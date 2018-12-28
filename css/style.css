@@ -1,0 +1,155 @@
+body {
+  background: rgb(121, 168, 255);
+  color: #fff;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+
+.main > input, button {
+  margin: 0,
+}
+
+button {
+  margin: 0 10px;
+  background: none;
+  border-radius: 6px;
+  border: 1px #ddd solid;
+  color: #fff;
+  font-size: 15px;
+  height: 50px;
+  width: 100%;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+button:hover {
+  background: #fff;
+  color: black;
+}
+
+input[type="text"] {
+  margin: 0.5em auto;
+  font-size: 20px;
+  line-height: 10px;
+  height: 10%;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+input[type="text"]:focus {
+  color: #333;
+}
+
+li {
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: auto;
+  padding: 0 0 0 5px;
+}
+
+li >  input[type="text"] {
+  width: 500px;
+}
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: rgb(66, 66, 66);
+}
+
+#completed-tasks {
+  display: none;
+}
+
+#show-completed-tasks {
+  margin-top: 1em;
+  display: block;
+  border: none;
+}
+
+
+/*======================================== SEÇÃO DAS MEDIAS QUERIES =================================*/
+
+@media screen and (max-width: 768px){
+
+	.container{
+    width: relative;
+    margin-top: 30px;
+  }
+
+  button#save-button {
+    height: 50px;
+    width: 25%;
+    margin: 10px 10px 0;
+    
+  }
+
+  button#show-completed-tasks {
+    margin: 0 auto;
+    margin-top: 1em;
+    display: block;
+    border: none;
+  }
+
+  input[type="text"] {    
+    width: 50px;
+    margin: 10px 0 0;
+    
+  }
+  input#new-task {
+    float: left;
+    width: 60%;
+  }
+  
+  input#search-task{
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  
+  .container{
+    width: 90%;
+    margin-top: 50px;
+		display: block;
+  }
+}
